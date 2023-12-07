@@ -32,7 +32,7 @@ public class ReadFromFile {
         return result;
     }
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\Dani\\OneDrive\\Desktop\\JAVA\\Problem1 provided code\\W1P1input.txt"; // Relative path to the file
+        String filePath = "";
 
         try {
             //Read from file

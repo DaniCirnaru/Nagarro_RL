@@ -9,7 +9,7 @@ public class Canvas implements GraphicalObject {
     private List<GraphicalObject> objects;
 
     public Canvas() {
-        objects = new ArrayList<>();
+        objects = new ArrayList<GraphicalObject>();
     }
 
     public void add(GraphicalObject object) {

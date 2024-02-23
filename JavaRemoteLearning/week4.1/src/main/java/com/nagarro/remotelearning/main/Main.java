@@ -4,10 +4,9 @@ import com.nagarro.remotelearning.model.StringList;
 
 public class Main {
     public static void main(String[] args) {
-        // Create a new StringList instance
+        
         StringList stringList1 = new StringList();
 
-        // Add elements to the list
         stringList1.add("12");
         stringList1.add("23");
         stringList1.add("34");

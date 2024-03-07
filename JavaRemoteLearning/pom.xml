@@ -29,7 +29,10 @@
     <module>week5.p3</module>
     <module>week6.p1</module>
     <module>week6.p2</module>
-
+    <module>week7.p1</module>
+    <module>week7.p2</module>
+    <module>week7.p3</module>
+    <module>week7.p4</module>
 
 
   </modules>
@@ -42,7 +45,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.10</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

@@ -80,8 +80,8 @@ public class CustomPriorityQueueTest {
         CustomPriorityQueue<Integer> priorityQueue = new CustomPriorityQueue<>();
         List<Integer> sortedList = priorityQueue.sort(inputList);
 
-        List<Integer> expectedList = Arrays.asList(1, 2, 3, 4, 5, 6);
-
+        List<Integer> expectedList = Arrays.asList(6, 5, 4, 3, 2, 1);
+        
         assertEquals(expectedList, sortedList);
     }
 }

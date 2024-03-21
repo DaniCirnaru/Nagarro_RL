@@ -22,7 +22,6 @@
     <module>week3.p3</module>
     <module>week4.p3</module>
     <module>week4.p2</module>
-    <module>week4.1</module>
     <module>week4.p4</module>
     <module>week5.p2</module>
     <module>week5.p1</module>
@@ -36,20 +35,25 @@
     <module>week8.p1</module>
     <module>week8.p2</module>
     <module>week8.p3</module>
-
+    <module>week9.p1</module>
+    <module>week9.p2</module>
+    <module>week9.p3</module>
 
   </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.10</version>
-      <scope>test</scope>
-    </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.10</version>
+        <scope>test</scope>
+      </dependency>
   </dependencies>
 </project>

@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.nagarro.remotelearning</groupId>
+    <artifactId>JavaRemoteLearning</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+
+  <artifactId>week11.p1</artifactId>
+  <packaging>jar</packaging>
+
+  <name>week11.p1</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <version>8.0.33</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>sql-maven-plugin</artifactId>
+        <version>1.5</version>
+
+        <dependencies>
+          <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+          </dependency>
+        </dependencies>
+
+        <configuration>
+          <driver>com.mysql.cj.jdbc.Driver</driver>
+          <!-- Configure with your own database parameters-->
+          <url>jdbc:mysql://localhost:3306/week11_1</url>
+          <username>root</username>
+          <password>dani1234</password>
+          <!-- set this to true if you want to skip executing the database scripts-->
+          <skip>false</skip>
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>create-db</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <autocommit>true</autocommit>
+              <srcFiles>
+                <srcFile>src/main/sql/create.sql</srcFile>
+              </srcFiles>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
